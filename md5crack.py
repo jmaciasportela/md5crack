@@ -75,7 +75,7 @@ if __name__ == '__main__':
             try:
                 with open(inputFile, 'r') as f:
                     listMD5 = f.readlines()
-                # Max 64 hashes per request
+                #Max 64 hashes per request
                 partials = chunks(listMD5, SLICESIZE)
                 with open(FILEOUT, 'w') as outf:
                     for chunk in partials:
@@ -85,13 +85,13 @@ if __name__ == '__main__':
                             print cracking[0]
                             for result in cracking[1]:
                                 if result != 'Not_found':
-                                    outf.write( result + '\n')
+                                    outf.write( str(result) + '\n')
                                 else:
                                     outf.write('\n')
                             print "[+] Chunk Results: " + cracking[0]
                         else:
                             continue
-                print: "Check file " + FILEOUT
+                print "Check file " + FILEOUT
                 exit()
             except KeyboardInterrupt:
                 print "\b\b[!] Thanks for using this tool."

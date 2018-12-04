@@ -14,3 +14,4 @@ Installation
 You can use this tool with this command `./md5crack FILE`
 example: `./md5crack.py hashes.txt`
 
+Results will be stored on "results.txt" file
