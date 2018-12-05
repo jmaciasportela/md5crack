@@ -16,7 +16,7 @@ from pyquery import PyQuery
 
 HOST = 'https://www.hashkiller.co.uk'
 SLICESIZE = 64
-FILEOUT = "results.txt"
+FILEOUT = "plain.txt"
 
 def crack(md5List, auto=True):
     scraper = cfscrape.create_scraper()
