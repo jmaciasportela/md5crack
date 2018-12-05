@@ -9,9 +9,9 @@ Installation
 
     `pip install -r requirements.txt`
 
-###Command
+### Command
 
 You can use this tool with this command `./md5crack FILE`
-example: `./md5crack.py hashes.txt`
+example: `./md5crack.py passwords.txt`
 
-Results will be stored on "results.txt" file
+Results will be stored on "plain.txt" file
